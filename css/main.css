@@ -1,0 +1,1050 @@
+/*
+ * HTML5 Boilerplate
+ *
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html, html a, input, textarea, keygen, select, button, isindex {
+    -webkit-font-smoothing: antialiased;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
+}
+
+html,
+button,
+input,
+select,
+textarea {
+ 	color: #222;
+}
+
+body {
+    font-size: 1.1em;
+    line-height: 1.4;
+   	font-family: "proxima-nova", Helvetica, arial, sans-serif;
+   	color: #3b4043;
+    background: #3B4043;
+    vertical-align: top;
+}
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection declarations have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between images and the bottom of their containers: h5bp.com/i/440
+ */
+
+img {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Chrome Frame prompt
+   ========================================================================== */
+
+.chromeframe {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+   
+/*=== Animations */
+
+.header {
+	opacity: 0;
+	-webkit-animation: fadeinclean .6s .5s 1 forwards ease-in-out;
+	-moz-animation: fadeinclean .6s .5s 1 forwards ease-in-out;
+	animation: fadeinclean .6s .5s 1 forwards ease-in-out;
+	animation-delay:2s;
+	-moz-animation-delay:2s;
+	-webkit-animation-delay:2s;
+	-o-animation-delay:2s;
+}
+
+@keyframes fadeinclean{
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fadeinclean{
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+@-moz-keyframes fadeinclean{
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+.logo {
+	opacity: 0;
+	-webkit-transform: translateY(-20px);
+	-moz-transform: translateY(-20px);
+	transform: translateY(-20px);
+	-webkit-animation: fadein .6s .4s 1 forwards ease-in-out;
+	-moz-animation: fadein .6s .4s 1 forwards ease-in-out;
+	animation: fadein .6s .4s 1 forwards ease-in-out;
+	animation-delay:2.3s;
+	-moz-animation-delay:2.3s;
+	-webkit-animation-delay:2.3s;
+	-o-animation-delay:2.3s;
+}
+@keyframes fadein{
+  0%{
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  100%{
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fadein{
+  0%{
+    -webkit-transform: translateY(-20px);
+    opacity: 0;
+  }
+  100%{
+    -webkit-transform: translateY(0);
+    opacity: 1;
+  }
+}
+@-moz-keyframes fadein{
+  0%{
+    -moz-transform: translateY(-20px);
+    opacity: 0;
+  }
+  100%{
+    -moz-transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/*=== Basic Styles ===*/
+
+
+a, a:link, a:active, a:visited {
+	color:#ea4c89;
+	text-decoration: none;
+	font-size: 0.95em;
+}
+
+a:hover, a:focus {
+	text-decoration: underline;
+	transition: text-decoration 0.3s linear;
+	-webkit-transition: text-decoration 0.3s linear;
+	-moz-transition: text-decoration 0.3s linear;
+}
+
+p {
+	font-size: 1.1em;
+}
+
+h2 {
+	font-family: "brandon-grotesque", helvetica, arial, sans-serif;
+	font-size: 2.0em;
+	margin: 60px auto 60px auto;
+	text-transform: uppercase;
+	max-width: 600px;
+}
+
+textarea {
+  resize: none;
+}
+
+/*=== Sections ===*/
+
+section {
+	background: #fff;
+	float: left;
+	width: 100%;
+}
+
+#section_header {background-color: #ffd967 !important;}
+@-webkit-keyframes colours {
+	  0% {background-color: #ffd967;}
+	 20% {background-color: #ffd967;}
+	 30% {background-color: #91fed1;}
+	 45% {background-color: #91fed1;}
+	 55% {background-color: #bba1fd;}
+	 70% {background-color: #bba1fd;}
+	 80% {background-color: #8cd0ff;}
+	 95% {background-color: #8cd0ff;}
+	100% {background-color: #ffd967;}
+}
+
+@-moz-keyframes colours {
+	  0% {background-color: #ffd967;}
+	 20% {background-color: #ffd967;}
+	 30% {background-color: #91fed1;}
+	 45% {background-color: #91fed1;}
+	 55% {background-color: #bba1fd;}
+	 70% {background-color: #bba1fd;}
+	 80% {background-color: #8cd0ff;}
+	 95% {background-color: #8cd0ff;}
+	100% {background-color: #ffd967;}
+}
+
+@-o-keyframes colours {
+	  0% {background-color: #ffd967;}
+	 20% {background-color: #ffd967;}
+	 30% {background-color: #91fed1;}
+	 45% {background-color: #91fed1;}
+	 55% {background-color: #bba1fd;}
+	 70% {background-color: #bba1fd;}
+	 80% {background-color: #8cd0ff;}
+	 95% {background-color: #8cd0ff;}
+	100% {background-color: #ffd967;}
+}
+
+@keyframes colours {
+	  0% {background-color: #ffd967;}
+	 20% {background-color: #ffd967;}
+	 30% {background-color: #91fed1;}
+	 45% {background-color: #91fed1;}
+	 55% {background-color: #bba1fd;}
+	 70% {background-color: #bba1fd;}
+	 80% {background-color: #8cd0ff;}
+	 95% {background-color: #8cd0ff;}
+	100% {background-color: #ffd967;}
+}
+
+#section_header {
+	-webkit-animation-direction: normal;
+	-webkit-animation-duration: 30s;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-name: colours;
+	-webkit-animation-timing-function: ease;
+	
+	-moz-animation-direction: normal;
+	-moz-animation-duration: 30s;
+	-moz-animation-iteration-count: infinite;
+	-moz-animation-name: colours;
+	-moz-animation-timing-function: ease;
+	
+	-o-animation-direction: normal;
+	-o-animation-duration: 30s;
+	-o-animation-iteration-count: infinite;
+	-o-animation-name: colours;
+	-o-animation-timing-function: ease;
+
+	animation-direction: normal;
+	animation-duration: 30s;
+	animation-iteration-count: infinite;
+	animation-name: colours;
+	animation-timing-function: ease;
+}
+
+#section_header {
+	height: 313px;
+}
+
+#section_header header {
+	background: transparent url("/img/photo_overlay.png") center top;
+	background-size:cover;
+	height: 313px;
+	position: relative;
+}
+
+section#portfolio {
+	background: #ededed url("/img/shade.png") repeat-x left top;
+	float: left;
+	width: 100%;
+	text-align: center;
+	padding: 0 0 20px 0;
+}
+
+/*=== Header ===*/
+
+.logo {
+	width: 81px;
+	height: 141px;
+	background-image: url("/img/logo_timthing.png");
+	background-repeat: no-repeat;
+	background-position: center center;
+	position: absolute;
+	top:50%;
+	left:50%;
+	margin: -90px 0 0 -40px;
+}
+
+.portrait {
+	background-image: url("/img/photo_portrait.png");
+	background-repeat: no-repeat;
+	background-position: center center; 
+	width: 88px;
+	height: 88px;
+	position: absolute;
+	bottom: 0;
+	left:50%;
+	border: 8px solid #fff;
+	margin: 0 0 -52px -52px;
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+	border-radius: 50%;
+	-webkit-background-clip: padding-box;
+}
+
+/*=== Rotate ===*/
+
+.rotate{ 
+    -webkit-transition-duration: 0.5s;
+    -moz-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+     
+    -webkit-transition-property: -webkit-transform;
+    -moz-transition-property: -moz-transform;
+    -o-transition-property: -o-transform;
+    transition-property: transform;
+     
+    overflow:hidden;
+ }   
+ 
+.rotate:hover, .rotate:focus { 
+    -webkit-transform:rotate(-90deg);
+    -moz-transform:rotate(-90deg); 
+    -o-transform:rotate(-90deg);
+    transform:rotate(-90deg);
+}  
+
+/*=== Intro ===*/
+
+.intro {
+	max-width: 600px;
+	padding: 0 20px;
+	margin: 90px auto 0;
+	text-align: center;
+}
+
+.intro h1 {
+	font-family: "brandon-grotesque", helvetica, arial, sans-serif;
+	text-transform: uppercase;
+	font-size: 2.9em;
+	font-style: normal;
+	font-weight: 900;	
+}
+
+
+/*=== Contact Menu ===*/
+
+.menu_contact {
+	padding: 40px 0 60px 0;
+	max-width: 300px;
+	width: 300px;
+	margin: 0 auto;
+}
+
+.menu_contact ul {
+	margin: 0 auto;
+	padding: 0;
+	text-align: center;
+}
+
+.menu_contact li {
+	display: inline-block;
+	position: relative;
+	margin: 0 5px;
+	width: 36px;
+	height: 36px;
+}
+
+.menu_contact li a {
+	display: block;
+	width: 36px;
+	height: 36px;
+}
+
+.dribbble {
+	background-image: url("/img/contact_dribbble.png");
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+.twitter {
+	background-image: url("/img/contact_twitter.png");
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+/*=== Tooltip ===*/
+
+span.tooltip {
+	position: absolute;
+	white-space: nowrap;
+	width: 50px;
+	height: 15px;
+	padding: 1px 3px 4px 3px;
+	font-size: 0.75em;
+	font-weight: normal;
+	text-align: center;
+	color: rgb(255, 255, 255);
+	background: rgb(59, 64, 67);
+	border: 4px solid rgb(59, 64, 67);
+	border-radius: 5px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-o-border-radius: 10px;	
+	top: -40px;
+	left: 50%;
+	margin: 0 0 0 -30px;
+	visibility: hidden;
+	opacity: 0;
+	transition: visibility 0s 0.5s, opacity 0.5s linear, top 0.5s ease-in-out;
+	-webkit-transition: visibility 0s 0.5s, opacity 0.5s linear, top 0.5s ease-in-out;
+	-moz-transition: visibility 0s 0.5s, opacity 0.5s linear, top 0.5s ease-in-out;
+	-o-transition: visibility 0s 0.5s, opacity 0.5s linear, top 0.5s ease-in-out;
+	-webkit-backface-visibility:hidden;
+	-moz-backface-visibility: hidden; 
+}
+.menu_contact ul li:hover span.tooltip, .menu_contact ul li:focus span.tooltip {
+	visibility: visible;
+	opacity: 1;	
+	top:-45px;	
+	transition: opacity 0.5s linear, top 0.5s ease-in-out;
+	-webkit-transition: opacity 0.5s linear, top 0.5s ease-in-out;
+	-moz-transition: opacity 0.5s linear, top 0.5s ease-in-out;
+	-o-transition: opacity 0.5s linear, top 0.5s ease-in-out;
+	-webkit-backface-visibility:hidden;
+	-moz-backface-visibility: hidden;
+}
+span.tooltip:after {
+	content: "";
+	position: absolute;
+	width: 0;
+	height: 0;
+	border-width: 10px;
+	border-style: solid;
+	border-color: #3b4043 transparent transparent transparent;
+	top: 22px;
+	left: 50%;
+	margin: 0 0 0 -12px;
+}
+
+/*=== Contact form ==*/
+
+form#ajax-contact-form {
+	max-width: 620px;
+	margin: 0 auto;
+	padding: 0 10px;
+	text-align: left;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;   
+}
+
+form#ajax-contact-form input[type="text"], input[type="url"], 
+input[type="email"], input[type="tel"], textarea {
+	margin: 0 0 25px 0;
+	padding: 15px; 
+	width: 100%; 
+	max-width: 625px;
+	font-size: 1.05em;
+	font-family: inherit; 
+	color: #3B4043;
+	border: none;
+    -moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px; 
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box; 
+	-webkit-background-clip: padding-box;  
+}
+
+form#ajax-contact-form textarea {
+	height: 150px;
+}
+
+form#ajax-contact-form label {
+	display:none;
+}
+
+form#ajax-contact-form label.error { 
+	width: 220px;
+	margin: 3px 0 0 0;
+	display: block;
+	color: #cf0101;                              
+	font-size: 0.9em; 
+	text-align: right;
+}
+
+form#ajax-contact-form .placeholder {
+	color: #aaa;
+}
+
+form#ajax-contact-form span {
+	width: 100%;
+	color: #666f74;
+	text-align: center;
+	display: block;
+	margin: 60px 0 0 0;
+}
+
+form#ajax-contact-form span a, form#ajax-contact-form span a:active, form#ajax-contact-form span a:visited  {
+	color: #666f74;
+	transition: color 0.15s linear;
+	-webkit-transition: color 0.15s linear;
+	-moz-transition: color 0.15s linear;	
+}
+
+form#ajax-contact-form span a:hover, form#ajax-contact-form span a:focus {
+	color: #fff;
+	text-decoration: none;
+}
+
+.notification_ok, .notification_error {
+    height: auto;
+    text-align: center;
+    color: #fff;
+}
+
+.notification_error {
+	margin: 15px 0;
+	padding: 4px;
+}
+
+/*=== Buttons ===*/
+
+a.btn, .btn {
+	display: inline-block;
+	margin: 0;
+	padding: 10px 60px;
+	background-color: #4bd99e ;
+	border: none;
+	color: #fff;
+	font-size: 1.1em;
+	font-weight: 700;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	text-decoration: none;
+	transition: background-color 0.15s linear;
+	-webkit-transition: background-color 0.15s linear;
+	-moz-transition: background-color 0.15s linear;
+	-webkit-background-clip: padding-box;
+}
+
+a.btn:hover, .btn:hover, a.btn:focus, .btn:focus {
+	background-color: #3ec28b;
+}
+
+a.btn:active, .btn:active {
+	background-color: #36ad7c;
+}
+
+form#ajax-contact-form .btn {
+	padding: 15px 0;
+	margin: 15px 0;
+	width: 100%;
+	height: 75px;
+	display: block;
+}
+
+form#ajax-contact-form .btn:hover {
+	cursor: pointer;
+}
+
+form#ajax-contact-form .btn:active {
+	cursor: pointer;
+}
+
+.contact_error {
+	background-image: url("/img/error.png");
+	background-repeat: no-repeat;
+	background-position: right 8px;
+}
+
+
+/*=== Contact page ===*/
+
+.email {
+	background-image: url("/img/outbox.png");
+	background-repeat: no-repeat;
+	background-position: left center;
+	padding: 0 0 0 30px;
+	margin: 0 0 60px 0;
+	display: inline-block;
+}
+
+/*=== Focus styles ===*/
+
+button::-moz-focus-inner,
+input[type="reset"]::-moz-focus-inner,
+input[type="button"]::-moz-focus-inner,
+input[type="submit"]::-moz-focus-inner,
+input[type="file"] > input[type="button"]::-moz-focus-inner {
+    border: none;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+/*=== Portfolio ===*/
+
+#portfolio ul {
+	padding: 0;
+	margin: 0;
+	max-width: 625px;
+	display: inline-block;
+	text-align: center;
+}
+
+#portfolio li {
+	list-style: none;
+	list-style-type: none;
+	display: inline-block;
+	width: 300px;
+	margin: 0 5px 40px 5px;
+	padding: 0 0 20px 0;
+	background-color: #fff;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	box-shadow: 0px 1px 1px #d2d2d2;
+	-webkit-background-clip: padding-box;
+}
+
+#portfolio li p, #portfolio li a, #portfolio li h4  {
+	float: left;
+	clear: both;
+	margin: 5px 20px 5px 25px;
+}
+
+#portfolio li a {
+	margin-top: 20px;
+}
+
+#portfolio li h4 {
+	font-family: "brandon-grotesque", helvetica, arial, sans-serif;
+	font-size: 1.5em;
+	font-style: normal;
+	font-weight: 900;
+	margin-bottom: 0;
+	margin-left: 24px;
+	text-transform: uppercase;
+}
+
+#portfolio li .description {
+	font-size: 1.1em;
+	font-weight: 700;
+	font-style: italic;
+}
+
+#portfolio li .tags {
+	font-weight: 300;
+	font-size: 0.9em;
+}
+
+#portfolio li div {
+	height: 150px;
+	border-radius: 5px 5px 0 0;
+	-webkit-border-radius: 5px 5px 0 0;
+	-moz-border-radius: 5px 5px 0 0;
+	margin: 0 0 15px 0;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	-webkit-background-clip: padding-box;
+}
+
+#portfolio li div a {
+	display: block;
+	width: 300px;
+	height: 150px;
+	margin: 0;
+	zoom: 1;
+	filter: alpha(opacity=50);
+	opacity: 0.5;
+	border-radius: 5px 5px 0 0;
+	-webkit-border-radius: 5px 5px 0 0;
+	-moz-border-radius: 5px 5px 0 0;
+	transition: background-color 0.2s linear;
+	-webkit-transition: background-color 0.2s;
+	-moz-transition: background-color 0.2s;
+	-webkit-background-clip: padding-box;
+}
+
+#portfolio li div a:hover, #portfolio li div a:focus {
+	background-color: #ea4c89;
+}
+
+
+/*=== Portfolio Backgrounds ===*/
+
+.fr {
+	background-image: url("/img/portfolio/fr.png");
+}
+
+.ice {
+	background-image: url("/img/portfolio/ICEApp.png");
+}
+
+.nesshop {
+	background-image: url("/img/portfolio/DearNespresso02.png");
+}
+
+.neslogin {
+	background-image: url("/img/portfolio/DearNespresso01.png");
+}
+
+.artist {
+	background-image: url("/img/portfolio/ArtistProfile.png");
+}
+
+/*=== Footer ===*/
+
+footer {
+	min-height: 95px;
+	float: left;
+	width: 100%;
+	text-align: center;
+	position: relative;
+}
+
+footer article.top {
+	padding: 0 0 60px 0;
+	border-bottom: 1px solid #2d3133;
+}
+
+footer article.bottom {
+	padding: 40px 0;
+	border-top: 1px solid #474e51;
+}
+
+footer h2 {
+	color: #fff;
+	margin-top: 60px;
+}
+
+.logomini {
+	background-image: url("/img/logo_mini.png");
+	background-repeat: no-repeat;
+	background-position: center center;
+	width: 21px;
+	height: 34px;
+	margin: 0 auto;
+}
+
+/*=== IE crap ===*/
+
+.lt-ie10 .header, .lt-ie10 .logo  {
+	opacity: 1;
+}
+
+.lt-ie10 .logo {
+	margin-top: -70px;
+}
+
+.lt-ie10 form#ajax-contact-form label {
+	display: block;
+	font-size: 1.1em;
+	color: #fff;
+	margin: 0 0 10px 0;
+	font-weight: bold;
+	width: 220px;
+}
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Image replacement
+ */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    /* IE 6/7 fallback */
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 100%;
+}
+
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   Theses examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+       only screen and (min-resolution: 144dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/*=== Hidpi stuff ===*/
+
+@media 	only screen and (-webkit-min-device-pixel-ratio: 2),
+  		only screen and (-moz-min-device-pixel-ratio: 2),
+  		only screen and (-o-min-device-pixel-ratio: 2/1),
+  		only screen and (min-device-pixel-ratio: 2),
+  		only screen and (min-resolution: 2dppx) {
+    
+	.logo {
+		background-image: url("/img/logo_timthing@2x.png");
+		background-size: 100%;
+	}
+	
+	.dribbble {
+		background-image: url("/img/contact_dribbble@2x.png");
+		background-size: 100%;
+	}
+	
+	.mail {
+		background-image: url("/img/contact_mail@2x.png");		
+		background-size: 100%;
+	}
+	
+	.twitter {
+		background-image: url("/img/contact_twitter@2x.png");
+		background-size: 100%;
+	}
+	
+	.portrait {
+		background-image: url("/img/photo_portrait@2x.png"); 
+		background-size: 100%;
+	}
+	
+	.contact_error {
+		background-image: url("/img/error@2x.png");
+		background-size: 18px 14px;
+	}
+	.email {
+		background-image: url("/img/outbox@2x.png");
+		background-size: 20px 16px;
+	}
+	.logomini {
+		background-image: url("/img/logo_mini@2x.png");
+		background-size: 100%;
+	}
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links for images, or javascript/internal links
+     */
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
