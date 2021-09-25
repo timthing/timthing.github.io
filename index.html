@@ -18,55 +18,14 @@
 
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
         <link rel="apple-touch-icon-precomposed" href="apple-touch-icon-precomposed.png">
-        
-        <!-- JQuery -->
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.8.3.min.js"><\/script>')</script>        
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/main.css">
-        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
-        	    
+                	    
         <!-- Import Typekit fonts -->
 		<script type="text/javascript" src="//use.typekit.net/gyy1fih.js"></script>
 		<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
-		
-		<!-- Contact Form -->
-		<script type="text/javascript">                                 
-		// we will add our javascript code here
-		jQuery(document).ready(function($) {
-		
-			$("#ajax-contact-form").submit(function() {
-				var str = $(this).serialize();
-		
-				$.ajax({
-					type: "POST",
-					url: "includes/contact-process.php",
-					data: str,
-					success: function(msg) {
-		    			// Message Sent? Show the 'Thank You' message and hide the form
-		    			if(msg == 'OK') {
-		    				result = '<div class="notification_ok">Your message has been sent. <br />Thank you!</div>';
-		    				$("#fields").hide();
-		    			} else {
-		    				result = msg;
-		    			}
-		    			$('#note').html(result);
-					}
-				});
-				return false;
-			});
-		});
-		</script>  
-
             
     </head>
     <body>
-        <!--[if lt IE 7]>
-            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
-        <![endif]-->
 
-        <!-- Add your site or application content here -->
 		<section id="section_header">
 			
 			<header class="header">
@@ -143,36 +102,6 @@
 
 		<footer>
 		
-			<article class="top">		
-		
-				<h2>Contact</h2>
-				
-				<div id="note"></div>			
-			
-				<div id="fields">
-				<form id="ajax-contact-form" action="">
-					<fieldset>    
-					 
-					<label for="name">Name</label>
-					<input type="text" name="name" placeholder="Frodo Baggins" required="required">
-					 
-					<label for="email">E-mail</label>
-					<input type="email" name="email" placeholder="frodo@theshire.com" required="required">
-					 
-					<label for="message">Question/Comment</label>
-					<textarea name="message" placeholder="Mordor, Gandalf, is it left or right?" required="required"></textarea>
-
-					<input class="btn" type="submit" name="submit" value="Send Message" />
-					
-					<span><a href="mailto:its@timthing.me">its @ timthing .me</a></span>
-					 
-					</fieldset>
-				</form>	
-							
-				</div>		
-		
-			</article>
-			
 			<article class="bottom">
 		
 				<div class="logomini"></div>
@@ -181,43 +110,5 @@
 		
 		</footer>
 
-        <script src="js/plugins.js"></script>
-        <script src="js/main.js"></script>
-        
-        <!-- Google Analytics -->
-		<script type="text/javascript">		
-		  var _gaq = _gaq || [];
-		  _gaq.push(['_setAccount', 'UA-20922102-2']);
-		  _gaq.push(['_trackPageview']);
-		  		
-		  (function() {
-		    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-		    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-		    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-		  })();		
-		</script>
-        
-        <!-- Gosquared Analytics -->
-        <script type="text/javascript">
-		  var GoSquared = {};
-		  GoSquared.acct = "GSN-282671-Z";
-		  (function(w){
-		    function gs(){
-		      w._gstc_lt = +new Date;
-		      var d = document, g = d.createElement("script");
-		      g.type = "text/javascript";
-		      g.src = "//d1l6p2sc9645hc.cloudfront.net/tracker.js";
-		      var s = d.getElementsByTagName("script")[0];
-		      s.parentNode.insertBefore(g, s);
-		    }
-		    w.addEventListener ?
-		      w.addEventListener("load", gs, false) :
-		      w.attachEvent("onload", gs);
-		  })(window);
-		</script>
-		
-		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script>
-
-		
-    </body>
+	</body>
 </html>
