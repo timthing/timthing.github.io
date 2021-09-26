@@ -966,11 +966,6 @@ footer h2 {
 		background-size: 100%;
 	}
 	
-	.portrait {
-		background-image: url("/img/photo_portrait@2x.png"); 
-		background-size: 100%;
-	}
-	
 	.contact_error {
 		background-image: url("/img/error@2x.png");
 		background-size: 18px 14px;
