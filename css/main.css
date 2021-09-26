@@ -333,7 +333,7 @@ section#portfolio {
 }
 
 .portrait {
-	background-image: url("https://en.gravatar.com/userimage/16323298/36deba8f23983da5952e0cb152624b60.jpeg");
+	background-image: url("/img/photo_portrait.jpeg");
 	background-repeat: no-repeat;
 	background-position: center center; 
 	width: 88px;
