@@ -346,6 +346,7 @@ section#portfolio {
 	-moz-border-radius: 50%;
 	-webkit-border-radius: 50%;
 	border-radius: 50%;
+	background-clip: padding-box;
 	-webkit-background-clip: padding-box;
 }
 
@@ -458,6 +459,7 @@ span.tooltip {
 	-webkit-transition: visibility 0s 0.5s, opacity 0.5s linear, top 0.5s ease-in-out;
 	-moz-transition: visibility 0s 0.5s, opacity 0.5s linear, top 0.5s ease-in-out;
 	-o-transition: visibility 0s 0.5s, opacity 0.5s linear, top 0.5s ease-in-out;
+	backface-visibility:hidden;
 	-webkit-backface-visibility:hidden;
 	-moz-backface-visibility: hidden; 
 }
@@ -469,6 +471,7 @@ span.tooltip {
 	-webkit-transition: opacity 0.5s linear, top 0.5s ease-in-out;
 	-moz-transition: opacity 0.5s linear, top 0.5s ease-in-out;
 	-o-transition: opacity 0.5s linear, top 0.5s ease-in-out;
+	backface-visibility:hidden;
 	-webkit-backface-visibility:hidden;
 	-moz-backface-visibility: hidden;
 }
@@ -513,6 +516,7 @@ input[type="email"], input[type="tel"], textarea {
 	box-sizing: border-box;
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box; 
+	background-clip: padding-box;
 	-webkit-background-clip: padding-box;  
 }
 
@@ -586,6 +590,7 @@ a.btn, .btn {
 	transition: background-color 0.15s linear;
 	-webkit-transition: background-color 0.15s linear;
 	-moz-transition: background-color 0.15s linear;
+	background-clip: padding-box;
 	-webkit-background-clip: padding-box;
 }
 
@@ -670,6 +675,7 @@ button:focus {
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
 	box-shadow: 0px 1px 1px #d2d2d2;
+	background-clip: padding-box;
 	-webkit-background-clip: padding-box;
 }
 
@@ -713,6 +719,7 @@ button:focus {
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: cover;
+	background-clip: padding-box;
 	-webkit-background-clip: padding-box;
 }
 
@@ -730,6 +737,7 @@ button:focus {
 	transition: background-color 0.2s linear;
 	-webkit-transition: background-color 0.2s;
 	-moz-transition: background-color 0.2s;
+	background-clip: padding-box;
 	-webkit-background-clip: padding-box;
 }
 
