@@ -333,7 +333,7 @@ section#portfolio {
 }
 
 .portrait {
-	background-image: url("/img/photo_portrait.png");
+	background-image: url("https://en.gravatar.com/userimage/16323298/36deba8f23983da5952e0cb152624b60.jpeg");
 	background-repeat: no-repeat;
 	background-position: center center; 
 	width: 88px;
@@ -351,7 +351,7 @@ section#portfolio {
 
 /*=== Rotate ===*/
 
-.rotate{ 
+/*.rotate{ 
     -webkit-transition-duration: 0.5s;
     -moz-transition-duration: 0.5s;
     -o-transition-duration: 0.5s;
@@ -370,7 +370,7 @@ section#portfolio {
     -moz-transform:rotate(-90deg); 
     -o-transform:rotate(-90deg);
     transform:rotate(-90deg);
-}  
+}*/  
 
 /*=== Intro ===*/
 
