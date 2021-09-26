@@ -335,7 +335,8 @@ section#portfolio {
 .portrait {
 	background-image: url("/img/photo_portrait.jpeg");
 	background-repeat: no-repeat;
-	background-position: center center; 
+	background-position: center center;
+	background-size: contain;
 	width: 88px;
 	height: 88px;
 	position: absolute;
