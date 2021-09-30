@@ -10,7 +10,7 @@
    Base styles: opinionated defaults
    ========================================================================== */
 
-html, html a, input, textarea, keygen, select, button, isindex {
+   html, html a, input, textarea, keygen, select, button, isindex {
     -webkit-font-smoothing: antialiased;
     text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
 }
@@ -27,7 +27,7 @@ body {
     font-size: 1.1em;
     line-height: 1.4;
    	font-family: Helvetica, arial, sans-serif;
-   	color: #3b4043;
+   	color: #ffffff;
     background: #3B4043;
     vertical-align: top;
 }
@@ -109,10 +109,10 @@ textarea {
 	-webkit-animation: fadeinclean .6s .5s 1 forwards ease-in-out;
 	-moz-animation: fadeinclean .6s .5s 1 forwards ease-in-out;
 	animation: fadeinclean .6s .5s 1 forwards ease-in-out;
-	animation-delay:2s;
-	-moz-animation-delay:2s;
-	-webkit-animation-delay:2s;
-	-o-animation-delay:2s;
+	animation-delay:1s;
+	-moz-animation-delay:1s;
+	-webkit-animation-delay:1s;
+	-o-animation-delay:1s;
 }
 
 @keyframes fadeinclean{
@@ -148,10 +148,10 @@ textarea {
 	-webkit-animation: fadein .6s .4s 1 forwards ease-in-out;
 	-moz-animation: fadein .6s .4s 1 forwards ease-in-out;
 	animation: fadein .6s .4s 1 forwards ease-in-out;
-	animation-delay:2.3s;
-	-moz-animation-delay:2.3s;
-	-webkit-animation-delay:2.3s;
-	-o-animation-delay:2.3s;
+	animation-delay:1.2s;
+	-moz-animation-delay:1.2s;
+	-webkit-animation-delay:1.2s;
+	-o-animation-delay:1.2s;
 }
 @keyframes fadein{
   0%{
@@ -188,7 +188,7 @@ textarea {
 
 
 a, a:link, a:active, a:visited {
-	color:#ea4c89;
+	color:#ffffff;
 	text-decoration: none;
 	font-size: 0.95em;
 }
@@ -198,6 +198,7 @@ a:hover, a:focus {
 	transition: text-decoration 0.3s linear;
 	-webkit-transition: text-decoration 0.3s linear;
 	-moz-transition: text-decoration 0.3s linear;
+	color: #737f86;
 }
 
 p {
@@ -219,11 +220,10 @@ textarea {
 /*=== Sections ===*/
 
 section {
-	background: #fff;
 	float: left;
 	width: 100%;
 }
-
+/*
 #section_header {background-color: #ffd967 !important;}
 @-webkit-keyframes colours {
 	  0% {background-color: #ffd967;}
@@ -298,42 +298,44 @@ section {
 	animation-name: colours;
 	animation-timing-function: ease;
 }
-
+*/
 #section_header {
 	height: 313px;
 }
 
 #section_header header {
-	background: transparent url("/img/photo_overlay.png") center top;
+	/*background: transparent url("../img/photo_overlay.png") center top;*/
 	background-size:cover;
 	height: 313px;
 	position: relative;
 }
-
+/*
 section#portfolio {
-	background: #ededed url("/img/shade.png") repeat-x left top;
+	background: #ededed url("../img/shade.png") repeat-x left top;
 	float: left;
 	width: 100%;
 	text-align: center;
 	padding: 0 0 20px 0;
-}
+}*/
 
 /*=== Header ===*/
 
 .logo {
-	width: 81px;
-	height: 141px;
-	background-image: url("/img/logo_timthing.png");
+	/*background-image: url("../img/tt_glyph.svg");
 	background-repeat: no-repeat;
-	background-position: center center;
+	background-position: center center;*/
 	position: absolute;
 	top:50%;
 	left:50%;
 	margin: -90px 0 0 -40px;
 }
+.logo svg {
+	width: 81px;
+	height: 141px;
+}
 
 .portrait {
-	background-image: url("/img/photo_portrait.jpeg");
+	background-image: url("../img/photo_portrait.jpeg");
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-size: contain;
@@ -342,7 +344,7 @@ section#portfolio {
 	position: absolute;
 	bottom: 0;
 	left:50%;
-	border: 8px solid #fff;
+	box-shadow: 0 0 2px 1px rgba(255,255,255,0.1) inset;
 	margin: 0 0 -52px -52px;
 	-moz-border-radius: 50%;
 	-webkit-border-radius: 50%;
@@ -384,11 +386,15 @@ section#portfolio {
 }
 
 .intro h1 {
-	font-family: "brandon-grotesque", helvetica, arial, sans-serif;
-	text-transform: uppercase;
+	font-family: helvetica, arial, sans-serif;
+	/*text-transform: uppercase;*/
 	font-size: 2.9em;
 	font-style: normal;
-	font-weight: 900;	
+	font-weight: 900;
+	margin: -0.33em 0;
+}
+.intro p {
+	color: #737f86;
 }
 
 
@@ -419,18 +425,6 @@ section#portfolio {
 	display: block;
 	width: 36px;
 	height: 36px;
-}
-
-.dribbble {
-	background-image: url("/img/contact_dribbble.png");
-	background-repeat: no-repeat;
-	background-position: center center;
-}
-
-.twitter {
-	background-image: url("/img/contact_twitter.png");
-	background-repeat: no-repeat;
-	background-position: center center;
 }
 
 /*=== Tooltip ===*/
@@ -629,7 +623,7 @@ form#ajax-contact-form .btn:active {
 /*=== Contact page ===*/
 
 .email {
-	background-image: url("/img/outbox.png");
+	background-image: url("../img/outbox.png");
 	background-repeat: no-repeat;
 	background-position: left center;
 	padding: 0 0 0 30px;
@@ -750,23 +744,23 @@ button:focus {
 /*=== Portfolio Backgrounds ===*/
 
 .fr {
-	background-image: url("/img/portfolio/fr.png");
+	background-image: url("../img/portfolio/fr.png");
 }
 
 .ice {
-	background-image: url("/img/portfolio/ICEApp.png");
+	background-image: url("../img/portfolio/ICEApp.png");
 }
 
 .nesshop {
-	background-image: url("/img/portfolio/DearNespresso02.png");
+	background-image: url("../img/portfolio/DearNespresso02.png");
 }
 
 .neslogin {
-	background-image: url("/img/portfolio/DearNespresso01.png");
+	background-image: url("../img/portfolio/DearNespresso01.png");
 }
 
 .artist {
-	background-image: url("/img/portfolio/ArtistProfile.png");
+	background-image: url("../img/portfolio/ArtistProfile.png");
 }
 
 /*=== Footer ===*/
@@ -781,12 +775,12 @@ footer {
 
 footer article.top {
 	padding: 0 0 60px 0;
-	border-bottom: 1px solid #2d3133;
+	/*border-bottom: 1px solid #2d3133;*/
 }
 
 footer article.bottom {
 	padding: 40px 0;
-	border-top: 1px solid #474e51;
+	/*border-top: 1px solid #474e51;*/
 }
 
 footer h2 {
@@ -795,7 +789,7 @@ footer h2 {
 }
 
 .logomini {
-	background-image: url("/img/logo_mini.png");
+	background-image: url("../img/logo_mini.png");
 	background-repeat: no-repeat;
 	background-position: center center;
 	width: 21px;
@@ -946,37 +940,17 @@ footer h2 {
   		only screen and (-o-min-device-pixel-ratio: 2/1),
   		only screen and (min-device-pixel-ratio: 2),
   		only screen and (min-resolution: 2dppx) {
-    
-	.logo {
-		background-image: url("/img/logo_timthing@2x.png");
-		background-size: 100%;
-	}
-	
-	.dribbble {
-		background-image: url("/img/contact_dribbble@2x.png");
-		background-size: 100%;
-	}
-	
-	.mail {
-		background-image: url("/img/contact_mail@2x.png");		
-		background-size: 100%;
-	}
-	
-	.twitter {
-		background-image: url("/img/contact_twitter@2x.png");
-		background-size: 100%;
-	}
 	
 	.contact_error {
-		background-image: url("/img/error@2x.png");
+		background-image: url("../img/error@2x.png");
 		background-size: 18px 14px;
 	}
 	.email {
-		background-image: url("/img/outbox@2x.png");
+		background-image: url("../img/outbox@2x.png");
 		background-size: 20px 16px;
 	}
 	.logomini {
-		background-image: url("/img/logo_mini@2x.png");
+		background-image: url("../img/logo_mini@2x.png");
 		background-size: 100%;
 	}
 }
