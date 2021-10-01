@@ -340,7 +340,7 @@ section#portfolio {
 	bottom: 0;
 	left:50%;
 	box-shadow: 0 0 2px 1px rgba(255,255,255,0.1) inset;
-	margin: 0 0 -52px -52px;
+	margin: 0 0 -60px -52px;
 	-moz-border-radius: 50%;
 	-webkit-border-radius: 50%;
 	border-radius: 50%;
@@ -376,7 +376,7 @@ section#portfolio {
 .intro {
 	max-width: 600px;
 	padding: 0 20px;
-	margin: 90px auto 0;
+	margin: 100px auto 0;
 	text-align: center;
 }
 
