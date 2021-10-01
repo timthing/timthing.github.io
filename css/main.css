@@ -770,11 +770,21 @@ button:focus {
 
 footer {
 	min-height: 95px;
-	float: left;
-	width: 100%;
 	text-align: center;
-	position: relative;
-}
+	border-width: 0 0 3px 0;
+	/*border-image-source: linear-gradient(to right, #0DFF36, #00CF7F);*/
+	border-image: linear-gradient(left, #0DFF36, #00CF7F) 100% 1;
+	-webkit-border-image: 
+	-webkit-linear-gradient(left, #0DFF36, #00CF7F) 100% 1;
+	-o-border-image: 
+	-o-linear-gradient(left, #0DFF36, #00CF7F) 100% 1;
+	-moz-border-image: 
+	-moz-linear-gradient(left, #0DFF36, #00CF7F) 100% 1;
+	display: block;
+	height: 100vh;
+	width: 100%;
+	box-sizing: border-box;
+}  
 
 footer article.top {
 	padding: 0 0 60px 0;
