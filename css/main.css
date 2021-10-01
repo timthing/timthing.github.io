@@ -63,7 +63,8 @@ body {
 hr {
 	background: linear-gradient(to right, #0DFF36, #00CF7F);
 	height: 3px;
-	position: absolute;
+	position: sticky;
+	position: -webkit-sticky;
 	bottom: 0%;
 	display: block;
 	width: 100%;
