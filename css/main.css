@@ -321,9 +321,6 @@ section#portfolio {
 /*=== Header ===*/
 
 .logo {
-	/*background-image: url("../img/tt_glyph.svg");
-	background-repeat: no-repeat;
-	background-position: center center;*/
 	position: absolute;
 	top:50%;
 	left:50%;
